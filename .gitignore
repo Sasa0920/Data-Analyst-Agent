@@ -151,6 +151,7 @@ activemq-data/
 
 # Environments
 .env
+.analyst/
 .envrc
 .venv
 env/
@@ -218,3 +219,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+node_modules/
+db/pagila/*.sql
+!db/pagila/.gitkeep
