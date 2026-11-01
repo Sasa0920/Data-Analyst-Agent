@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: da_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: pagila
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+
+volumes:
+  pgdata:
