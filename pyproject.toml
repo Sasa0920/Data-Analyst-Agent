@@ -1,2 +1,5 @@
 [tool.ruff]
 extend-exclude = ["analyst"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
